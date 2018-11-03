@@ -29,8 +29,11 @@ def checkValid(result, line):
         jsonresult = json.loads(result)
         if "access_denied" not in result:
             print bcolors.OKGREEN + u'[\u2713] ' + line + bcolors.ENDC
+            driver.Close()
         else:
             print bcolors.FAIL + '[X] ' + line + "|    Error: " + jsonresult['error']
+            driver.Close()
+
 
 def importCombolist():
     print "Please drag and drop a combolist here."
