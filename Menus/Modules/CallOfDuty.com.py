@@ -7,7 +7,7 @@ import json
 from selenium import webdriver
 from bs4 import BeautifulSoup
 options = Options()
-options.set_headless(headless=False)
+options.set_headless(headless=True)
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -39,7 +39,7 @@ def login(username, password):
     else:
         hasGames = True
         KD = driver.find_elements_by_xpath("/html[@class='wf-opensans-n3-active wf-opensans-n7-active wf-montserrat-n4-active wf-opensanscondensed-n3-active wf-opensanscondensed-n7-active wf-opensans-n4-active wf-active']/body[@class='with-sso-bar desktop sso-logged-in sso-auth-known']/div[@class='page-content-container']/div[@class='page-content parsys']/div[@class='atvi-component atvi-content-tile ignore-id template  ']/div[@id='mycod']/div[@id='app']/main[@class='main-content']/div[@class='dashboard-page-new main-content-inner inner-wrapper bo4']/section[@class='weekly-stats item']/div[@class='chart-wrap']/div[@class='weekly-stats__inner']/div[@class='StatProgressCircle bo4']/div[@class='StatProgressCircle__stats']/span[@class='value']").get_attribute('value')
-        print bcolors.OKGREEN + "[O] " + username + ":" + password + " | Has a KD Ratio of " + KD  bcolors.ENDC
+        print bcolors.OKGREEN + "[O] " + username + ":" + password + " | Has a KD Ratio of " + KD + bcolors.ENDC
         element = elements[0]
         driver.close()
 
