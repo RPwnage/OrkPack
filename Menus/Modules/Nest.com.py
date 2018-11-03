@@ -1,9 +1,12 @@
 import requests
 import webbrowser
-import os
+import os, sys
 import time
+import inspect
 import json
+###### LOGIN URL ######
 url = "https://home.nest.com/session"
+######   COLORS  ######
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -16,8 +19,7 @@ class bcolors:
 
 def welcome():
     os.system("clear")
-    print "This tool is supplied by @OrkSec."
-    print "We do not take responsibility for what you do with this tool."
+    print ("welcome to the " + os.path.basename(__file__)[:-3] + " Checker!")
 
 def checkValid(result, line):
     if "Too many requests" in result:
