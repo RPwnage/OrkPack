@@ -20,8 +20,9 @@ Installing firefox WebDriver:
 ==> macOS `brew install geckodriver`
 ------
 ==> Linux `sudo apt-add-repository ppa:mozillateam/firefox-next && sudo apt-get update && sudo apt-get install firefox xvfb`
+------
 ==> Windows `shutdown /s /m \\SERVER /d p:0:0 /c "Fuck Windows bitch get *nix/linux"`
-
+------
 Make sure python2.7 is installed.
 # running
 `python final.py`
