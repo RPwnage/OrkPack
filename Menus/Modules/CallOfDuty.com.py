@@ -58,5 +58,6 @@ def askForCombo():
     combolistFullPath = raw_input("==> ")
     storeArray(combolistFullPath)
 
-
+os.system("clear")
+print ("welcome to the " + os.path.basename(__file__)[:-3] + " Checker!")
 askForCombo()
