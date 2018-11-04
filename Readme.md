@@ -12,7 +12,9 @@ We've got bunch of modules you can use. Some are faster (requests, mechanize) an
 we do not take responsibility for what you do with this tool! We do not support any illegal actions performed with this tool.
 # Installation 
 Installing missing python modules:
+
 `pip install requirements.txt`
+
 Installing firefox WebDriver:
 ==> macOS `brew install geckodriver`
 ==> Linux `sudo apt-add-repository ppa:mozillateam/firefox-next && sudo apt-get update && sudo apt-get install firefox xvfb`
