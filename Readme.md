@@ -22,7 +22,7 @@ Installing firefox WebDriver:
 ==> Windows `shutdown /s /m \\SERVER /d p:0:0 /c "Fuck Windows bitch get *nix/linux"`<br/>
 Make sure python2.7 is installed.
 # running
-`python final.py`
+`python Main.py`, should bring you to the main menu!
 # For the ConsoleOnly people
 Well im sorry about that but because of how some modules are configured you may not be able to run the Selenium based modules. The request based modules should work just fine!
 If you want to contribute to this project request a merge of your fork. I appreciate all the helping hands i could get #nohomo.
